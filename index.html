@@ -25,11 +25,16 @@
             width: 80px;
             height: 80px;
         }
+
+        main > div {
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
-<body class="h-screen flex flex-col">
-    <div class="w-screen bg-yellow-50 p-4">
+<body class="m-auto h-screen flex flex-col bg-yellow-50 sm:max-w-md">
+    <div class="w-full bg-yellow-50 p-4">
         <header class="w-full flex justify-between">
             <div class="flex items-center text-xl">
                 <span class="w-6 h-6 mr-1"><svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode"
@@ -89,16 +94,19 @@
         </div>
     </main>
 
-    <footer class="fixed bottom-0 m-auto py-3 flex items-center justify-between w-full bg-white">
+    <footer class="fixed bottom-0 m-auto py-3 flex items-center justify-between w-full bg-white sm:max-w-md">
+
         <button class="rounded-full bg-gray-200 py-3 px-6 ml-4 flex items-center">
             <span>✌️</span>
             <span class="text-sm text-red-500 ml-2">Leave quietly</span>
         </button>
 
-        <div class="mb-4 items-center">
+        <div class="flex items-center">
+            
             <button class="rounded-full bg-gray-200 p-2 mr-4">
                 <img class="w-8 h-8" src="https://cdn-icons-png.flaticon.com/512/6995/6995993.png">
             </button>
+
             <button class="rounded-full bg-gray-200 p-2 mr-4">
                 <img class="w-8 h-8" src="https://cdn-icons-png.flaticon.com/512/1161/1161469.png">
             </button>
